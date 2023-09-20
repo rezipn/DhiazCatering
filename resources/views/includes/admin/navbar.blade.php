@@ -23,6 +23,13 @@
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                 aria-labelledby="userDropdown">
                 
+                @if (Route::has('password.request'))
+                <a class="btn btn-link dropdown-item" href="{{ route('password.request') }}">
+                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                    {{ __('Reset Password') }}
+                </a>
+                @endif
+
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                     Logout

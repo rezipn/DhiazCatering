@@ -6,3 +6,6 @@
 
 <!-- Custom styles for this template-->
 <link href="{{ url('backend/css/sb-admin-2.min.css') }}" rel="stylesheet">
+
+<!-- Animate -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />

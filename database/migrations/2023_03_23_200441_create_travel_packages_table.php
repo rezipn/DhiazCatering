@@ -19,13 +19,13 @@ return new class extends Migration
             $table->string('slug');
             $table->string('location');
             $table->longText('about');
-            $table->string('featured_event');
-            $table->string('language');
-            $table->string('food');
-            $table->date('departure_date');
+            $table->longText('keterangan');
+            // $table->string('featured_event');
+            // $table->string('language');
+            // $table->string('food');
             $table->string('duration');
             $table->string('type');
-            $table->integer('price');
+            $table->string('price');
             $table->softDeletes(); 
             $table->timestamps();
         });

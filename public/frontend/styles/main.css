@@ -1,7 +1,7 @@
 body {
-  background-color: #e4e6eb;
+  background-color: #ffffff;
   font-family: "Assistant", sans-serif;
-  color: #2f4f4f;
+  color: #646464;
 }
 
 .navbar-brand img {
@@ -9,11 +9,11 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #2f4f4f;
+  color: #606C5D;
 }
 .navbar-light .navbar-nav .nav-link.active {
   font-weight: bold;
-  color: #2f4f4f !important;
+  color: #606C5D !important;
 }
 
 .btn-navbar-right {
@@ -25,18 +25,18 @@ body {
 }
 
 .btn-login {
-  background-color: #425757;
+  background-color: #85A389;
   color: white;
 }
 .btn-login:hover {
-  background-color: #1e3771;
+  background-color: #A2CDB0;
   color: white;
 }
 
 header {
   padding: 180px 0 165px;
   margin-top: -70px;
-  background-image: url("../images/header2.jpg");
+  background-image: url("../images/cat3.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -53,11 +53,11 @@ header p {
   font-size: 22px;
 }
 header .btn-get-started {
-  background-color: #ff9e53;
+  background-color: #85A389;
   color: #fff;
 }
 header .btn-get-started:hover {
-  background-color: #ffaa69;
+  background-color: #A2CDB0;
   color: #fff;
 }
 
@@ -65,7 +65,7 @@ header .btn-get-started:hover {
   margin-top: -50px;
 }
 .section-stats .stats-detail {
-  padding-top: 18px;
+  padding-top: 25px;
   background-color: #fff;
   padding-left: 54px;
 }
@@ -79,9 +79,9 @@ header .btn-get-started:hover {
 }
 
 .section-popular {
-  min-height: 540px;
-  background-color: #2f4f4f;
-  margin-top: -50px;
+  min-height: 520px;
+  background: linear-gradient(#C4D7B2, #ffffff); 
+  margin-top: -115px;
   margin-bottom: -230px;
 }
 .section-popular .section-popular-heading {
@@ -89,7 +89,7 @@ header .btn-get-started:hover {
 }
 .section-popular .section-popular-heading h2,
 .section-popular .section-popular-heading p {
-  color: #fff;
+  color: #6e6e6e;
 }
 .section-popular .section-popular-heading h2 {
   font-family: "Playfair Display", serif;
@@ -97,7 +97,7 @@ header .btn-get-started:hover {
   font-size: 40px;
 }
 .section-popular .section-popular-heading p {
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .section-popular-content .section-popular-travel .card-travel {
@@ -109,7 +109,7 @@ header .btn-get-started:hover {
   margin-bottom: 20px;
 }
 .section-popular-content .section-popular-travel .travel-country {
-  font-size: 18px;
+  font-size: 25px;
   color: #fff;
 }
 .section-popular-content .section-popular-travel .travel-location {
@@ -117,16 +117,16 @@ header .btn-get-started:hover {
   color: #fff;
 }
 .section-popular-content .section-popular-travel .travel-button .btn-travel-details {
-  background-color: #ff9e53;
+  background-color: #85A389;
   color: #fff;
 }
 .section-popular-content .section-popular-travel .travel-button .btn-travel-details:hover {
-  background-color: #ffaa69;
+  background-color: #A2CDB0;
   color: #fff;
 }
 
 .section-networks {
-  background-color: #fff;
+  background: linear-gradient(#ffffff, #F7FFE5); 
   margin-top: -170px;
   padding-top: 240px;
   padding-bottom: 50px;
@@ -137,14 +137,14 @@ header .btn-get-started:hover {
   font-size: 40px;
 }
 .section-networks p {
-  font-size: 18px;
+  font-size: 25px;
 }
 .section-networks img {
   max-width: 100%;
 }
 
 .section-testimonial-heading {
-  background: linear-gradient(#fff 0%, #f7f9ff 100%);
+  background-color: #F7FFE5;
   padding-top: 50px;
   min-height: 506px;
 }
@@ -154,10 +154,11 @@ header .btn-get-started:hover {
   font-size: 40px;
 }
 .section-testimonial-heading p {
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .section-testimonial-content {
+  background: linear-gradient(#F7FFE5, #C4D7B2);
   margin-top: -300px;
   padding-bottom: 50px;
 }
@@ -184,11 +185,11 @@ header .btn-get-started:hover {
   color: #6e6e6e;
 }
 .section-testimonial-content .btn-get-started {
-  background-color: #ff9e53;
+  background-color: #85A389;
   color: #fff;
 }
 .section-testimonial-content .btn-get-started:hover {
-  background-color: #ffaa69;
+  background-color: #A2CDB0;
   color: #fff;
 }
 .section-testimonial-content .btn-need-help {
@@ -196,17 +197,17 @@ header .btn-get-started:hover {
   color: #c3c3c3;
 }
 .section-testimonial-content .btn-need-help:hover {
-  background-color: #fafafa;
+  background-color: #A2CDB0;
   color: #c3c3c3;
 }
 
 .section-footer a {
-  color: #2f4f4f;
+  color: #646464;
 }
 
 .section-details-header {
   min-height: 310px;
-  background: #2f4f4f;
+  background: #C4D7B2;
   margin-top: -70px;
 }
 
@@ -240,17 +241,17 @@ header .btn-get-started:hover {
   color: #425757;
 }
 .section-details-content .card-details p {
-  font-size: 18px;
+  font-size: 20px;
   color: #b1b1b1;
 }
 .section-details-content .card-details .trip-informations th {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 20px;
   color: #425757;
 }
 .section-details-content .card-details .trip-informations td {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 20px;
   color: #b1b1b1;
 }
 .section-details-content .card-details .trip-informations .text-blue {
@@ -258,16 +259,16 @@ header .btn-get-started:hover {
   font-weight: bold;
 }
 .section-details-content .card-details .trip-informations .text-orange {
-  color: #ff9e53;
+  color: #425757;
   font-weight: bold;
 }
 .section-details-content .card-details .payment-instructions {
   font-weight: 300;
-  font-size: 14px;
-  color: #b1b1b1;
+  font-size: 16px;
+  color: #425757;
 }
 .section-details-content .card-details .bank .bank-item h3 {
-  font-size: 18px;
+  font-size: 25px;
   color: #425757;
   margin-bottom: 0;
 }
@@ -286,7 +287,8 @@ header .btn-get-started:hover {
 }
 .section-details-content .card-details .bank .bank-image {
   width: 30px;
-  height: 30px;
+  padding-top: 5px;
+  height: 25px;
   float: left;
 }
 .section-details-content .card-details .disclaimer {
@@ -318,7 +320,7 @@ header .btn-get-started:hover {
   margin-left: 0px;
 }
 .section-details-content .features h3 {
-  font-size: 18px;
+  font-size: 25px;
   color: #2f4f4f;
   margin-bottom: 0;
 }
@@ -353,12 +355,12 @@ header .btn-get-started:hover {
   margin-top: -16px;
 }
 .section-details-content .btn-join-now {
-  background-color: #ff9e53;
+  background-color: #A0C49D;
   color: #fff;
   border-radius: 0;
 }
 .section-details-content .btn-join-now:hover {
-  background-color: #ffaa69;
+  background-color: #C4D7B2;
   color: #fff;
 }
 
@@ -372,15 +374,50 @@ header .btn-get-started:hover {
 }
 .section-success p {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 25px;
   color: #b1b1b1;
 }
 .section-success .btn-home-page {
   border-radius: 4px;
-  background-color: #2f4f4f;
+  background-color: #F86F03;
   color: #fff;
 }
 .section-success .btn-home-page:hover {
-  background-color: #6c8e8e;
+  background-color: #FFA41B;
   color: #fff;
+}
+
+@media (min-width: 992px) {
+  .login-container {
+    background: linear-gradient(90deg, #ffffff 60%, #c1caca 40%);
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.page-login {
+  height: 100vh;
+}
+.page-login .btn-login {
+  background-color: #425757;
+  color: white;
+}
+.page-login .btn-login:hover {
+  background-color: #145440;
+  color: white;
+}
+.page-login .section-left h1 {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-size: 50px;
+  text-align: left;
+  color: #2f4f4f;
+}
+.page-login .section-right a {
+  font-family: Assistant;
+  font-weight: 300;
+  text-decoration: underline;
+  font-size: 16px;
+  text-align: center;
+  color: #bfbfbf;
 }/*# sourceMappingURL=main.css.map */

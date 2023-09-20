@@ -18,9 +18,9 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Travel</th>
+                                <th>Nama</th>
                                 <th>Gambar</th>
-                                <th>Action</th>
+                                <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>

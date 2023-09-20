@@ -27,13 +27,13 @@ class TravelPackageRequest extends FormRequest
             'title' => 'required|max:225',
             'location' => 'required|max:225',
             'about' => 'required',
-            'featured_event' => 'required|max:225',
-            'language' => 'required|max:225',
-            'food' => 'required|max:225',
-            'departure_date' => 'required|date',
+            'keterangan' => 'required',
+            // 'featured_event' => 'required|max:225',
+            // 'language' => 'required|max:225',
+            // 'food' => 'required|max:225',
             'duration' => 'required|max:225',
             'type' => 'required|max:225',
-            'price' => 'required|integer'
+            'price' => 'required'
         ];
     }
 }

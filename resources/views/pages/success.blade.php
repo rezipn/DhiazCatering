@@ -7,14 +7,14 @@
     <div class="div section-success d-flex align-items-center">
       <div class="col text-center">
         <img src="{{ url('frontend/images/suratt.png') }}" alt="">
-        <h1>Yay! Success</h1>
+        <h1>PERHATIAN!</h1>
         <p>
-          We've sent you email for trip instuctions
+          Mohon segera untuk
           <br>
-          Please read it as well
+          Periksa Email anda
         </p>
-        <a href="{{ url('/') }}" class="btn btn-home-page mt-3 px-5">
-          Home Page
+        <a href="https://mailtrap.io/inboxes/2133410/messages" class="btn btn-home-page mt-3 px-5">
+          Gmail
         </a>
       </div>
     </div>

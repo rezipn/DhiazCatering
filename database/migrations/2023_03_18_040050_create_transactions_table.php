@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('catering_packages_id');
-            $table->integer('users_id');
-            $table->integer('additional_visa');
-            $table->integer('transaction_total');
-            $table->string('transaction_status');  // IN_CART, PENDING, SUCCES, CANCEL, FAILED
+            $table->integer('travel_packages_id');
+            $table->integer('users_id')->nullable();
+            // $table->integer('tambahan_ket');
+            $table->string('transaction_total');
+            $table->string('transaction_status');  
             $table->softDeletes();
             $table->timestamps();
         });

@@ -1,82 +1,50 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Auth\RegisterController;
-use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\TransactionController;
 use App\Http\Controllers\Admin\TravelPackageController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
-use Illuminate\Support\Facades\Auth;
-
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-// Route::get('/', [HomeController::class, 'index'])
-////        ->name('home');
-
-// Route::get('/detail', [DetailController::class, 'index'])
-////        ->name('detail');
-
-// Route::get('/detail2', [DetailController::class, 'index2'])
-////        ->name('detail2');
-
-// Route::get('/detail3', [DetailController::class, 'index3'])
-////        ->name('detail3');
-
-// Route::get('/detail4', [DetailController::class, 'index4'])
- //       ->name('detail4');
-////
-// Route::get('/checkout', [CheckoutController::class, 'index'])
-//        ->name('checkout');
-////
-// Route::get('/checkout2', [CheckoutController::class, 'index2'])
-//        ->name('checkout2');
-////
-// Route::get('/checkout3', [CheckoutController::class, 'index3'])
-////        ->name('checkout3');
-////
-// Route::get('/checkout4', [CheckoutController::class, 'index4'])
-//        ->name('checkout4');
-////
-// Route::get('/checkout/success', [CheckoutController::class, 'success'])
-////        ->name('checkout-success');
-
-// Route::prefix('admin')
-//        ->namespace('Admin')
-//        ->middleware(['auth','admin'])
-//        ->group(function(){
-
-//        Route::get('/', [DashboardController::class, 'index'])
-//                ->name('dashboard');
-                
-//        Route::resource ('travel-package', 'App\Http\Controllers\Admin\TravelPackageController');
-//        });
-
-// Route::get('/dashboard', [DashboardController::class, 'index'])
-//         ->name('dashboard');
-
-
-// Auth::routes(['verify' => true]);
 
 Route ::get('/', [App\Http\Controllers\HomeController::class,'index'])
         ->name('home');
-Route ::get('/detail', [App\Http\Controllers\DetailController::class,'index'])
+
+Route ::get('/detail/{slug}', [App\Http\Controllers\DetailController::class,'index'])
         ->name('detail');
-Route ::get('/checkout', [App\Http\Controllers\CheckoutController::class,'index'])
-        ->name('checkout');
-Route ::get('/checkout/success', [App\Http\Controllers\CheckoutController::class,'success'])
-        ->name('checkout-success');
+
+
+Route::post('/checkout/{id}', [App\Http\Controllers\CheckoutController::class, 'process'])
+        ->name('checkout_process')
+        ->middleware(['auth','verified']);
+
+Route::get('/checkout/{id}', [App\Http\Controllers\CheckoutController::class, 'index'])
+        ->name('checkout')
+        ->middleware(['auth','verified']);
+
+Route::post('/checkout/create/{detail_id}', [App\Http\Controllers\CheckoutController::class, 'create'])
+        ->name('checkout-create') 
+        ->middleware(['auth','verified']);
+
+Route::get('/checkout/remove/{detail_id}', [App\Http\Controllers\CheckoutController::class, 'remove'])
+        ->name('checkout-remove')
+        ->middleware(['auth','verified']);
+
+Route::get('/checkout/confirm/{id}', [App\Http\Controllers\CheckoutController::class, 'success'])
+        ->name('checkout-success')
+        ->middleware(['auth','verified']);
+
+        
+        
+// Route ::get('/checkout', [App\Http\Controllers\CheckoutController::class,'index'])
+//         ->name('checkout');
+        
+// Route ::get('/checkout/success', [App\Http\Controllers\CheckoutController::class,'success'])
+//         ->name('checkout-success');
 
 Route::prefix('admin')
 ->middleware(['auth','admin'])
@@ -85,6 +53,15 @@ Route::prefix('admin')
         ->name('dashboard');
         Route::resource('travel-package', 'App\Http\Controllers\Admin\TravelPackageController');
         Route::resource('gallery', 'App\Http\Controllers\Admin\GalleryController');
+        Route::resource('transaction', 'App\Http\Controllers\Admin\TransactionController');
+        Route::resource('gallery', 'App\Http\Controllers\Admin\GalleryController');
+        
+        // Route::get('/export', [App\Http\Controllers\TransactionController::class, 'export']);
+        // Route::post('items.export-pdf', [TransactionController::class, 'viewPDF'])->name('export-pdf');
+        
+        
 });
+
+
 
 Auth::routes(['verify' => true]);

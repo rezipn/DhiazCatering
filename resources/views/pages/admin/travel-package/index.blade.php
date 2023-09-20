@@ -18,12 +18,11 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Title</th>
-                                <th>Location</th>
-                                <th>Type</th>
-                                <th>Departure Date</th>
-                                <th>Type</th>
-                                <th>Action</th>
+                                <th>Tipe</th>
+                                <th>Lokasi</th>
+                                <th>Minimal Order</th>
+                                <th>Harga</th>
+                                <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -33,8 +32,7 @@
                                 <td>{{ $item->title }}</td>
                                 <td>{{ $item->location }}</td>
                                 <td>{{ $item->type }}</td>
-                                <td>{{ $item->departure_date }}</td>
-                                <td>{{ $item->type }}</td>
+                                <td>Rp.{{ $item->price }}.000</td>
                                 <td>
                                     <a href="{{ route('travel-package.edit', $item->id) }}" class="btn btn-info">
                                         <i class="fa fa-pencil-alt"></i>

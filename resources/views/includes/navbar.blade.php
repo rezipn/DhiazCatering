@@ -2,31 +2,28 @@
 <div class="container">
     <nav class="row navbar navbar-expand-lg navbar-light bg-white">
       <a href="{{ route('home')}}" class="navbar-brand">
-        <img src="{{ url('frontend/images/logo.png') }}" alt="Logo Rez" />
+        <img src="{{ url('frontend/images/dhiazlogo.png') }}" alt="Logo Rez" />
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navb">
+
+        @guest
         <ul class="navbar-nav ml-auto mr-3">
           <li class="nav-item mx-md-2">
-            <a href="#" class="nav-link active">Home</a>
-          </li>
-          <li class="nav-item mx-md-2">
-            <a href="#" class="nav-link">Paket Travel</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Service</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item mx-md-2">
-            <a href="#" class="nav-link">Testimonial</a>
+            <a href="{{ route('register') }}" class="nav-link active">Daftar</a>
           </li>
         </ul>
+        @endguest
+        
+        @auth
+        <ul class="navbar-nav ml-auto mr-3">
+          <li class="nav-item mx-md-2">
+            <a href="" class="nav-link active"></a>
+          </li>
+        </ul>
+        @endauth
 
         
         @guest

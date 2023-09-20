@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Rez Wedding Organizer</title>
+    <title>Dhiaz Catering</title>
 
     @include('includes.admin.style')
 
@@ -59,7 +59,7 @@
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-body">Pilih "Keluar" di bawah jika Anda siap untuk mengakhiri sesi Anda saat ini.</div>
                 <div class="modal-footer">
                     <form action="{{ url('logout') }}" method="POST">
                         @csrf

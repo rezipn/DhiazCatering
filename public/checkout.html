@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="frontend/libraries/combined/css/gijgo.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="frontend/styles/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   </head>
   <body>
@@ -51,7 +52,7 @@
           </div>
           <div class="row">
             <div class="col-lg-8 pl-lg-0">
-              <div class="card card-details">
+              <div class="card card-details" >
                 <h1>Who is going?</h1>
                 <p>Trip to ubud, Bali, Indonesia</p>
                 <div class="attendee">
@@ -293,6 +294,10 @@
           }
         });
       });
+      import AOS from 'aos';
+      import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
     </script>
   </body>
 </html>

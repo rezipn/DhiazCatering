@@ -4,7 +4,7 @@
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('dashboard') }}">
        
-        <div class="sidebar-brand-text mx-3">Admin Wedding Organizer</div>
+        <div class="sidebar-brand-text mx-3">Admin Dhiaz Catering</div>
     </a>
 
     <!-- Divider -->
@@ -20,32 +20,26 @@
     <li class="nav-item">
         <a class="nav-link" href="{{ route('travel-package.index') }}">
             <i class="fas fa-fw fa-handshake"></i>
-            <span>Paket Wedding</span></a>
+            <span>Paket Catering</span></a>
     </li>
 
     <li class="nav-item">
         <a class="nav-link" href="{{ route('gallery.index') }}">
             <i class="fas fa-fw fa-images"></i>
-            <span>Galeri Wedding</span></a>
+            <span>Galeri Catering</span></a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('dashboard') }}">
+        <a class="nav-link" href="{{ route('transaction.index') }}">
             <i class="fas fa-fw fa-dollar-sign"></i>
             <span>Transaksi</span></a>
     </li>
 
-    <li class="nav-item">
-        <a class="nav-link" href="{{ route('dashboard') }}">
+    {{-- <li class="nav-item">
+        <a class="nav-link" href="{{ route('rekap.index') }}">
             <i class="fas fa-fw fa-book"></i>
             <span>Rekap Laporan</span></a>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link" href="{{ route('dashboard') }}">
-            <i class="fas fa-fw fa-user"></i>
-            <span>Data User</span></a>
-    </li>
+    </li> --}}
 
     <hr class="sidebar-divider">
 
